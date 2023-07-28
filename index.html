@@ -10,41 +10,21 @@
  <h1>Aprendiendo Vuejs</h1>
 
     <div id = "app">
-        <span v-bind:title="message">
-       {{ saludar }}
-       <!-- <p>{{numero}}</p> -->
-       <!-- <p>{{lista}}</p> -->
-       <p> {{ activo }} </p>
-
+      <span v-bind:title="message">
+        <p>{{saludar}}</p>
+        <p>{{numero}}</p> 
+        <p>{{lista}}</p> 
+        <p>{{activo}}</p>
+    
        <h3>Directivas Vue</h3>
        <p v-show = "activo" >Texto solo activo = true</p>
    
        </span>
     </div>
 
-    <div id="app-2">
-        <span v-bind:title="message">
-          Mueva el mouse sobre mí durante unos segundos
-          para ver mi título enlazado dinámicamente.
-        </span>
-      </div>
-   
-
-      <div id="app-3">
-        <span v-if="seen">Ahora me ves</span>
-      </div>
-
-      <div id="app-5">
-        <p>{{ message }}</p>
-        <button v-on:click="reverseMessage">Mensaje invertido</button>
-      </div>
-
-    <!-- <script src="
-    https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.min.js
-    "></script>  -->
-    
+       
+  
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <!-- <script type="text/javascript" src="vue.js"></script> -->
     <script type="text/javascript" src="practica.js"></script>
 </body>
 </html>
