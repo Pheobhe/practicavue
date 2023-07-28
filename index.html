@@ -13,12 +13,21 @@
       <span v-bind:title="message">
         <p>{{saludar}}</p>
         <p>{{numero}}</p> 
-        <p>{{lista}}</p> 
+       
         <p>{{activo}}</p>
     
-       <h3>Directivas Vue</h3>
+       <h2>======= Directivas Vue=========/h2>
+       <h3>Los v-show </h3>
        <p v-show = "activo" >Texto solo activo = True</p>
-   
+       <p v-show = "numero = 10" >Si numero es igual a 10 = True</p>
+       <h3> Los v-if condicional </h3>
+       <p v-if="activo === true">Se muestra si es true</p>
+       <p v-else>No es activo</p>
+       <h3> Los v-for para sentencias repetitivas </h3>
+       <ul>
+        <li v-for="numero in lista">Numero: {{numero}}</li>
+        <li v-for="n in 15" :key="n"> Numero: {{n}}</li>
+       </ul>
        </span>
     </div>
 
